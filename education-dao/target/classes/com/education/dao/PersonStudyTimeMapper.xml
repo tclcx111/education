@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.education.dao.PersonStudyTimeMapper">
+  <resultMap id="BaseResultMap" type="com.education.pojo.po.PersonStudyTime">
+        <id column="id" jdbcType="BIGINT" property="id" />
+        <result column="person_id" jdbcType="BIGINT" property="personId" />
+        <result column="course_id" jdbcType="BIGINT" property="courseId" />
+        <result column="chapter_id" jdbcType="BIGINT" property="chapterId" />
+        <result column="study_time" jdbcType="INTEGER" property="studyTime" />
+        <result column="time" jdbcType="INTEGER" property="time" />
+        <result column="time_desc" jdbcType="VARCHAR" property="timeDesc" />
+  </resultMap>
+  
+   <sql id="Base_Column_List">
+       id ,  person_id , course_id , chapter_id , study_time , time , time_desc 
+   </sql>
+  
+    <select id="queryByPrimaryKey" resultMap="BaseResultMap">
+       select 
+	    <include refid="Base_Column_List" />
+	    from t_person_study_time
+	    where id = #{id,jdbcType=BIGINT}
+    </select>
+   
+    <insert id="insert">
+	    insert into t_person_study_time (id,person_id,course_id,chapter_id,study_time,time,time_desc)
+	    values (#{id,jdbcType=BIGINT},#{personId,jdbcType=BIGINT},#{courseId,jdbcType=BIGINT},#{chapterId,jdbcType=BIGINT},#{studyTime,jdbcType=INTEGER},#{time,jdbcType=INTEGER},#{timeDesc,jdbcType=VARCHAR})
+    </insert>
+    
+    <insert id="insertSelective">
+	     insert into t_person_study_time
+		    <trim prefix="(" suffix=")" suffixOverrides=",">
+			     <if test="id != null">
+			        id,
+			      </if>
+			     <if test="personId != null">
+			        person_id,
+			      </if>
+			     <if test="courseId != null">
+			        course_id,
+			      </if>
+			     <if test="chapterId != null">
+			        chapter_id,
+			      </if>
+			     <if test="studyTime != null">
+			        study_time,
+			      </if>
+			     <if test="time != null">
+			        time,
+			      </if>
+			     <if test="timeDesc != null">
+			        time_desc,
+			      </if>
+		    </trim>
+		    <trim prefix="values (" suffix=")" suffixOverrides=",">
+			     <if test="id != null">
+			        #{id,jdbcType=BIGINT},
+			      </if>
+			     <if test="personId != null">
+			        #{personId,jdbcType=BIGINT},
+			      </if>
+			     <if test="courseId != null">
+			        #{courseId,jdbcType=BIGINT},
+			      </if>
+			     <if test="chapterId != null">
+			        #{chapterId,jdbcType=BIGINT},
+			      </if>
+			     <if test="studyTime != null">
+			        #{studyTime,jdbcType=INTEGER},
+			      </if>
+			     <if test="time != null">
+			        #{time,jdbcType=INTEGER},
+			      </if>
+			     <if test="timeDesc != null">
+			        #{timeDesc,jdbcType=VARCHAR},
+			      </if>
+		    </trim>
+    </insert>
+    
+    <update id="updateByParma" parameterType="java.util.Map">
+	  update t_person_study_time
+	    <set>
+	          <if test="id != null">
+		        id = #{id,jdbcType=BIGINT},
+		      </if>
+	          <if test="personId != null">
+		        person_id = #{personId,jdbcType=BIGINT},
+		      </if>
+	          <if test="courseId != null">
+		        course_id = #{courseId,jdbcType=BIGINT},
+		      </if>
+	          <if test="chapterId != null">
+		        chapter_id = #{chapterId,jdbcType=BIGINT},
+		      </if>
+	          <if test="studyTime != null">
+		        study_time = #{studyTime,jdbcType=INTEGER},
+		      </if>
+	          <if test="time != null">
+		        time = #{time,jdbcType=INTEGER},
+		      </if>
+	          <if test="timeDesc != null">
+		        time_desc = #{timeDesc,jdbcType=VARCHAR},
+		      </if>
+	    </set>
+	    where id = #{id,jdbcType=BIGINT}
+	  </update>
+	  
+  
+  
+  <select id="listByParma"  parameterType="java.util.Map" resultMap="BaseResultMap">
+  select 
+    <include refid="Base_Column_List" />
+    from t_person_study_time
+    <where>
+            <if test="id != null">
+		        id = #{id,jdbcType=BIGINT},  
+		     </if>
+            <if test="personId != null">
+		        person_id = #{personId,jdbcType=BIGINT},  
+		     </if>
+            <if test="courseId != null">
+		        course_id = #{courseId,jdbcType=BIGINT},  
+		     </if>
+            <if test="chapterId != null">
+		        chapter_id = #{chapterId,jdbcType=BIGINT},  
+		     </if>
+            <if test="studyTime != null">
+		        study_time = #{studyTime,jdbcType=INTEGER},  
+		     </if>
+            <if test="time != null">
+		        time = #{time,jdbcType=INTEGER},  
+		     </if>
+            <if test="timeDesc != null">
+		        time_desc = #{timeDesc,jdbcType=VARCHAR},  
+		     </if>
+    </where>
+  </select>
+  
+  <insert id="insertBatch" parameterType="java.util.List">
+        INSERT INTO t_person_study_time(id,person_id,course_id,chapter_id,study_time,time,time_desc)
+	    VALUES
+	    <foreach collection="list" item="item" separator=",">
+	        (#{item.id},#{item.personId},#{item.courseId},#{item.chapterId},#{item.studyTime},#{item.time},#{item.timeDesc})
+	    </foreach>
+  </insert>
+  
+  
+  
+</mapper>

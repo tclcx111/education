@@ -17,6 +17,7 @@ public interface CourseListBaseService {
 	 * @return
 	 */
 	ListResultEntity<CourseInfo> listCourseByCate(PageEntity pageEntity);
+
 	
 	
 }
