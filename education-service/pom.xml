@@ -7,4 +7,7 @@
   </parent>
   <artifactId>education-service</artifactId>
   <packaging>pom</packaging>
+  <modules>
+  	<module>education-service-course</module>
+  </modules>
 </project>

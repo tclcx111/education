@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.education</groupId>
+    <artifactId>education-pom</artifactId>
+    <version>1.0.0</version>
+  </parent>
+  <artifactId>education-pom-service</artifactId>
+  <description>Service 层公共pom</description>
+  
+  <dependencies>
+      <dependency>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-starter-web</artifactId>
+     </dependency>
+     <!-- 模板引擎 begin -->
+      <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+		<dependency>  
+		       <groupId>net.sourceforge.nekohtml</groupId>  
+		       <artifactId>nekohtml</artifactId>  
+		</dependency> 
+	 <!-- 模板引擎 end -->
+	  <!-- dubbo依赖引入 begin -->
+     <dependency>
+		<groupId>com.alibaba</groupId>
+		<artifactId>dubbo</artifactId>
+		<version>2.4.10</version>
+		<exclusions>
+			<exclusion>
+				<artifactId>spring</artifactId>
+				<groupId>org.springframework</groupId>
+			</exclusion>
+		</exclusions>
+	</dependency>
+    <dependency>
+         <groupId>com.github.sgroschupf</groupId>
+         <artifactId>zkclient</artifactId>
+         <version>0.1</version>
+    </dependency>
+    <!-- dubbo end -->
+  </dependencies>
+</project>

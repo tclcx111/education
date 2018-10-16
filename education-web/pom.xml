@@ -7,4 +7,17 @@
   </parent>
   <artifactId>education-web</artifactId>
   <packaging>pom</packaging>
+  <modules>
+  	<module>education-web-index</module>
+  	<module>education-web-forum</module>
+  	<module>education-web-note</module>
+  	<module>education-web-free-course</module>
+  	<module>education-web-career</module>
+  	<module>education-web-coding</module>
+  	<module>education-web-detail</module>
+  	<module>education-web-video</module>
+  	<module>education-web-order</module>
+  	<module>educaiton-web-user</module>
+  	<module>education-web-usercenter</module>
+  </modules>
 </project>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+     http://www.springframework.org/schema/beans/spring-beans.xsd 
+      http://dubbo.apache.org/schema/dubbo
+      classpath:/dubbo.xsd">  
+       
+     <dubbo:application name="shop-web-index"  />  
+    <dubbo:registry address="zookeeper://127.0.0.1:2181" />  
+    <dubbo:protocol name="dubbo" port="20880" />  
+    <!-- 发布服务 会员登陆 退出服务  客户端并发量10  客户端配置优先-->
+    <dubbo:reference interface="com.education.service.course.CourseService" id="courseService" actives="10"></dubbo:reference>
+</beans>

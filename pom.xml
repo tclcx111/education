@@ -4,11 +4,45 @@
   <artifactId>education</artifactId>
   <version>1.0.0</version>
   <packaging>pom</packaging>
+  
+  <properties>
+     <java.version>1.8</java.version>
+  </properties>
+  <dependencyManagement>
+      <dependencies>
+           <dependency>
+	            <groupId>org.springframework.boot</groupId>
+	            <artifactId>spring-boot-dependencies</artifactId>
+	            <version>1.5.14.RELEASE</version>
+	            <type>pom</type>
+	            <scope>import</scope>
+	        </dependency>      
+      </dependencies>
+  </dependencyManagement>
+  
   <modules>
   	<module>education-pojo</module>
   	<module>education-dao</module>
   	<module>education-base-service</module>
   	<module>education-service</module>
   	<module>education-web</module>
+  	<module>education-kafka</module>
+  	<module>education-pom-web</module>
+  	<module>education-pom</module>
+  	<module>education-service-base</module>
+  	<module>education-interface</module>
   </modules>
+  <build>  
+        <plugins>  
+            <plugin>  
+                <groupId>org.apache.maven.plugins</groupId>  
+                <artifactId>maven-compiler-plugin</artifactId>  
+                <version>3.1</version>  
+                <configuration>  
+                    <source>${java.version}</source>  
+                    <target>${java.version}</target>  
+                </configuration>  
+            </plugin>  
+        </plugins>  
+    </build>
 </project>
