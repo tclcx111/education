@@ -1,0 +1,6 @@
+*.log
+*.temp
+/**/.settings/
+.classpath
+.project
+*.class

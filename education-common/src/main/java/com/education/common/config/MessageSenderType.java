@@ -1,8 +1,5 @@
 package com.education.common.config;
 
-import org.springframework.context.annotation.Import;
-
-
 public class MessageSenderType {
 
 	/**
