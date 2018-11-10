@@ -9,5 +9,6 @@
   <packaging>pom</packaging>
   <modules>
   	<module>education-service-course</module>
+  	<module>education-service-usercenter</module>
   </modules>
 </project>

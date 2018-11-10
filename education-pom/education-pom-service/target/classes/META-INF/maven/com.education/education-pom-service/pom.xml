@@ -13,18 +13,8 @@
          <groupId>org.springframework.boot</groupId>
          <artifactId>spring-boot-starter-web</artifactId>
      </dependency>
-     <!-- 模板引擎 begin -->
-      <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>
-		<dependency>  
-		       <groupId>net.sourceforge.nekohtml</groupId>  
-		       <artifactId>nekohtml</artifactId>  
-		</dependency> 
-	 <!-- 模板引擎 end -->
 	  <!-- dubbo依赖引入 begin -->
-     <dependency>
+    <dependency>
 		<groupId>com.alibaba</groupId>
 		<artifactId>dubbo</artifactId>
 		<version>2.4.10</version>
@@ -39,14 +29,14 @@
          <groupId>com.github.sgroschupf</groupId>
          <artifactId>zkclient</artifactId>
          <version>0.1</version>
-    </dependency>
+    </dependency> 
     <!-- dubbo end -->
     
     <!-- redis 依赖 -->
-	<dependency>
+	<!-- <dependency>
 	    <groupId>org.springframework.boot</groupId>
 	    <artifactId>spring-boot-starter-data-redis</artifactId>
-	</dependency>
+	</dependency> -->
     <!-- redis 依赖 end -->
   </dependencies>
 </project>

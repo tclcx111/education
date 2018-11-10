@@ -24,5 +24,7 @@
   <modules>
   	<module>education-interface-service-base-course</module>
   	<module>education-interface-service-course</module>
+  	<module>education-interface-service-usercenter</module>
+  	<module>education-interface-service-base-usercenter</module>
   </modules>
 </project>

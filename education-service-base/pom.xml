@@ -10,5 +10,6 @@
   <description>所有基础服务公共父工程</description>
   <modules>
   	<module>education-service-base-course</module>
+  	<module>education-service-base-usercenter</module>
   </modules>
 </project>
