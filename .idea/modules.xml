@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/education.iml" filepath="$PROJECT_DIR$/education.iml" />
+      <module fileurl="file://$PROJECT_DIR$/education-base-service/education-base-service.iml" filepath="$PROJECT_DIR$/education-base-service/education-base-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/education-common/education-common.iml" filepath="$PROJECT_DIR$/education-common/education-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/education-dao/education-dao.iml" filepath="$PROJECT_DIR$/education-dao/education-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/education-interface/education-interface.iml" filepath="$PROJECT_DIR$/education-interface/education-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/education-interface/education-interface-service-base-course/education-interface-service-base-course.iml" filepath="$PROJECT_DIR$/education-interface/education-interface-service-base-course/education-interface-service-base-course.iml" />
+      <module fileurl="file://$PROJECT_DIR$/education-interface/education-interface-service-base-usercenter/education-interface-service-base-usercenter.iml" filepath="$PROJECT_DIR$/education-interface/education-interface-service-base-usercenter/education-interface-service-base-usercenter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/education-interface/education-interface-service-course/education-interface-service-course.iml" filepath="$PROJECT_DIR$/education-interface/education-interface-service-course/education-interface-service-course.iml" />
+      <module fileurl="file://$PROJECT_DIR$/education-interface/education-interface-service-userCenter/education-interface-service-usercenter.iml" filepath="$PROJECT_DIR$/education-interface/education-interface-service-userCenter/education-interface-service-usercenter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/education-kafka/education-kafka.iml" filepath="$PROJECT_DIR$/education-kafka/education-kafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/education-pojo/education-pojo.iml" filepath="$PROJECT_DIR$/education-pojo/education-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/education-pom/education-pom.iml" filepath="$PROJECT_DIR$/education-pom/education-pom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/education-pom/education-pom-service/education-pom-service.iml" filepath="$PROJECT_DIR$/education-pom/education-pom-service/education-pom-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/education-pom/education-pom-service-base/education-pom-service-base.iml" filepath="$PROJECT_DIR$/education-pom/education-pom-service-base/education-pom-service-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/education-pom/education-pom-web/education-pom-web.iml" filepath="$PROJECT_DIR$/education-pom/education-pom-web/education-pom-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/education-service/education-service.iml" filepath="$PROJECT_DIR$/education-service/education-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/education-service-base/education-service-base.iml" filepath="$PROJECT_DIR$/education-service-base/education-service-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/education-service-base/education-service-base-course/education-service-base-course.iml" filepath="$PROJECT_DIR$/education-service-base/education-service-base-course/education-service-base-course.iml" />
+      <module fileurl="file://$PROJECT_DIR$/education-service-base/education-service-base-usercenter/education-service-base-usercenter.iml" filepath="$PROJECT_DIR$/education-service-base/education-service-base-usercenter/education-service-base-usercenter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/education-service/education-service-course/education-service-course.iml" filepath="$PROJECT_DIR$/education-service/education-service-course/education-service-course.iml" />
+      <module fileurl="file://$PROJECT_DIR$/education-service/education-service-usercenter/education-service-usercenter.iml" filepath="$PROJECT_DIR$/education-service/education-service-usercenter/education-service-usercenter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/education-web/education-web.iml" filepath="$PROJECT_DIR$/education-web/education-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/education-web/education-web-career/education-web-career.iml" filepath="$PROJECT_DIR$/education-web/education-web-career/education-web-career.iml" />
+      <module fileurl="file://$PROJECT_DIR$/education-web/education-web-coding/education-web-coding.iml" filepath="$PROJECT_DIR$/education-web/education-web-coding/education-web-coding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/education-web/education-web-detail/education-web-detail.iml" filepath="$PROJECT_DIR$/education-web/education-web-detail/education-web-detail.iml" />
+      <module fileurl="file://$PROJECT_DIR$/education-web/education-web-forum/education-web-forum.iml" filepath="$PROJECT_DIR$/education-web/education-web-forum/education-web-forum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/education-web/education-web-free-course/education-web-free-course.iml" filepath="$PROJECT_DIR$/education-web/education-web-free-course/education-web-free-course.iml" />
+      <module fileurl="file://$PROJECT_DIR$/education-web/education-web-index/education-web-index.iml" filepath="$PROJECT_DIR$/education-web/education-web-index/education-web-index.iml" />
+      <module fileurl="file://$PROJECT_DIR$/education-web/education-web-note/education-web-note.iml" filepath="$PROJECT_DIR$/education-web/education-web-note/education-web-note.iml" />
+      <module fileurl="file://$PROJECT_DIR$/education-web/education-web-order/education-web-order.iml" filepath="$PROJECT_DIR$/education-web/education-web-order/education-web-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/education-web/education-web-usercenter/education-web-usercenter.iml" filepath="$PROJECT_DIR$/education-web/education-web-usercenter/education-web-usercenter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/education-web/education-web-video/education-web-video.iml" filepath="$PROJECT_DIR$/education-web/education-web-video/education-web-video.iml" />
+    </modules>
+  </component>
+</project>

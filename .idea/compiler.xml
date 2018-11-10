@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="education-common" />
+        <module name="education-dao" />
+        <module name="education-interface-service-base-course" />
+        <module name="education-interface-service-base-usercenter" />
+        <module name="education-interface-service-course" />
+        <module name="education-interface-service-usercenter" />
+        <module name="education-kafka" />
+        <module name="education-pojo" />
+        <module name="education-pom-service" />
+        <module name="education-pom-service-base" />
+        <module name="education-pom-web" />
+        <module name="education-service-base-course" />
+        <module name="education-service-base-usercenter" />
+        <module name="education-service-course" />
+        <module name="education-service-usercenter" />
+        <module name="education-web-career" />
+        <module name="education-web-coding" />
+        <module name="education-web-detail" />
+        <module name="education-web-forum" />
+        <module name="education-web-free-course" />
+        <module name="education-web-index" />
+        <module name="education-web-note" />
+        <module name="education-web-order" />
+        <module name="education-web-usercenter" />
+        <module name="education-web-video" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="education" target="1.8" />
+      <module name="education-base-service" target="1.8" />
+      <module name="education-common" target="1.5" />
+      <module name="education-dao" target="1.8" />
+      <module name="education-interface" target="1.5" />
+      <module name="education-interface-service-base-course" target="1.5" />
+      <module name="education-interface-service-base-usercenter" target="1.5" />
+      <module name="education-interface-service-course" target="1.5" />
+      <module name="education-interface-service-usercenter" target="1.5" />
+      <module name="education-kafka" target="1.5" />
+      <module name="education-pojo" target="1.8" />
+      <module name="education-pom" target="1.5" />
+      <module name="education-pom-service" target="1.5" />
+      <module name="education-pom-service-base" target="1.5" />
+      <module name="education-pom-web" target="1.5" />
+      <module name="education-service" target="1.8" />
+      <module name="education-service-base" target="1.5" />
+      <module name="education-service-base-course" target="1.5" />
+      <module name="education-service-base-usercenter" target="1.5" />
+      <module name="education-service-course" target="1.8" />
+      <module name="education-service-usercenter" target="1.8" />
+      <module name="education-web" target="1.8" />
+      <module name="education-web-career" target="1.8" />
+      <module name="education-web-coding" target="1.8" />
+      <module name="education-web-detail" target="1.8" />
+      <module name="education-web-forum" target="1.8" />
+      <module name="education-web-free-course" target="1.8" />
+      <module name="education-web-index" target="1.8" />
+      <module name="education-web-note" target="1.8" />
+      <module name="education-web-order" target="1.5" />
+      <module name="education-web-usercenter" target="1.5" />
+      <module name="education-web-video" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
